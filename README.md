@@ -126,4 +126,6 @@ This project is licensed under the MIT open source license.
 [wodby/webgrind]: https://hub.docker.com/r/wodby/webgrind
 [wodby/wordpress-php]: https://github.com/wodby/wordpress-php
 [wodby/wordpress]: https://github.com/wodby/wordpress
-[wodby/xhprof]: https://github.com/wodby/xhprof
+[wodby/xhprof]: https://github.com/wodby/xhprof 
+Nota:Borrar tu proyecto es la única forma de eliminar la versión predeterminada de tu app de App Engine. Sin embargo, puedes detener la versión predeterminada en GCP Console. Esta acción detiene todas las instancias asociadas a la versión. Puedes reiniciar estas instancias más tarde si es necesario.
+En el entorno estándar de App Engine, puedes detener la versión predeterminada si tu app tiene escalamiento manual o básico.
