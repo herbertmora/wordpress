@@ -48,9 +48,8 @@ shell:
 ## wp	:	Executes `wp cli` command in a specified `WP_ROOT` directory (default is `/var/www/html/`).
 ## 		Doesn't support --flag arguments.
 wp:
-	docker exec $(shell docker ps --filter name='^/$(PROJECT_NAME)_php' --format "{{ .ID }}") wp --path=$(WP_ROOT) $(filter-out $@,$(MAKECMDGOALS))
+	docker exec $(shell docker ps --filter name='^/$(PROJECT_NAME)_php' --format "{{ .ID }}") wp --path=$(WP_ROOT) $(filter-out $@,$(MAKECMDGOALS))#### logs	:	View containers logs.
 
-## logs	:	View containers logs.
 ##		You can optinally pass an argument with the service name to limit logs
 ##		logs php	: View `php` container logs.
 ##		logs nginx php	: View `nginx` and `php` containers logs.
